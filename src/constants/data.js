@@ -1,58 +1,58 @@
 import images from './images';
 
-const wines = [
+const specials = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'dolphin bay snow',
+    price: '$6.00',
+    tags: '豚豚奶',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Cookies & cream snow',
+    price: '$5.50',
+    tags: '黑炫風',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'mix fruit tea',
+    price: '$6.00',
+    tags: '綜合水果茶',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    title: 'float black tea',
+    price: '$5.50',
+    tags: '冰淇淋紅茶',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: 'pineapple slush',
+    price: '$5.50',
+    tags: '鳳梨冰沙',
   },
 ];
 
-const cocktails = [
+const favorites = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: 'Taro Mini Tapioca',
+    price: '$6',
+    tags: '芋頭椰汁西米露',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: "Mango Mini Tapioca",
+    price: '$6',
+    tags: '芒果椰汁西米露',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Sea SaltCream Top Green Tea',
+    price: '$5.50',
+    tags: '海鹽奶蓋綠茶',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Dolphin Bay Milk Tea + Boba',
+    price: '$5.50',
+    tags: '珍珠奶茶',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: 'Jasmine Green Tea + egg pudding',
+    price: '$5.50',
+    tags: '奶綠+布丁',
   },
 ];
 
@@ -79,4 +79,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { specials, favorites, awards };

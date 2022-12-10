@@ -22,6 +22,7 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import DB_logo from '../assets/DB_logo.png';
 import chopsticks from '../assets/chopsticks.jpeg'
+import DBsnow from '../assets/DBsnow.png';
 
 export default {
   DB_logo,
@@ -48,4 +49,5 @@ export default {
   quote,
   gericht,
   chopsticks
+  ,DBsnow
 };

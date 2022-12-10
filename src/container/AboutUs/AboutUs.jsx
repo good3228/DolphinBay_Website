@@ -31,7 +31,7 @@ const AboutUs = () => (
         <img src={images.knife} alt="about_knife" />
       </div>
 
-      <div className="app__aboutus-content_history">
+      <div className="app__aboutus-content_history flex__center">
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
