@@ -21,6 +21,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import DB_logo from '../assets/DB_logo.png';
+import chopsticks from '../assets/chopsticks.jpeg'
 
 export default {
   DB_logo,
@@ -46,4 +47,5 @@ export default {
   sign,
   quote,
   gericht,
+  chopsticks
 };

@@ -1,5 +1,7 @@
-.app__aboutus {
+.app__aboutus{
     position: relative;
+    background-color: var(--color-darkblue);
+    overflow: auto;
 }
 
 .app__aboutus-overlay {
