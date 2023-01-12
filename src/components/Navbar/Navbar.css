@@ -4,8 +4,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-darkblue);
+  border: black 0.01rem solid;
 
-  position: sticky;
+  z-index: 100;
+
+
   padding: 1rem 2rem;
 }
 
@@ -30,8 +33,9 @@
 }
 
 .app__navbar-links li {
-  margin: 0 1.5rem;
+  margin: 0 2rem;
   cursor: pointer;
+  font-size: 1.7rem;
 }
 
 .app__navbar-links li:hover {
@@ -49,7 +53,7 @@
   width: 100%;
   height: 100vh;
   background: var(--color-blue);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 
   flex-direction: column;
   z-index: 5;
@@ -70,10 +74,10 @@
 }
 
 .app__navbar-smallscreen_links li {
-  margin: 2rem;
+  margin: 4rem;
   cursor: pointer;
   color: var(--color-golden);
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-family: var(--font-base);
 }
@@ -83,33 +87,33 @@
 }
 
 @media screen and (min-width: 2000px) {
-    .app__navbar-logo img {
-        width: 330px;
-        height: auto;
-    }
+  .app__navbar-logo img {
+    width: 330px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1150px) {
-    .app__navbar-links {
-        display: none;
-    }
+  .app__navbar-links {
+    display: none;
+  }
 
-    .app__navbar-smallscreen {
-        display: flex;
-    }
+  .app__navbar-smallscreen {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .app__navbar {
-        padding: 1rem;
-    }
+  .app__navbar {
+    padding: 1rem;
+  }
 
-    .app__navbar-login {
-        display: none;
-    }
+  .app__navbar-login {
+    display: none;
+  }
 
-    .app__navbar-logo img {
-        width: 230px;
-        height: auto;
-    }
+  .app__navbar-logo img {
+    width: 230px;
+    height: auto;
+  }
 }

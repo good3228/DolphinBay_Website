@@ -23,7 +23,7 @@ const Navbar = () => {
           <a href="#about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="#Menu">Menu</a>
+          <a href="#special">Today's Special</a>
         </li>
         <li className="p__opensans">
           <a href="#contact">Contact</a>
