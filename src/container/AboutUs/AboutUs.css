@@ -23,11 +23,11 @@
 .app__aboutus-content_about {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-    text-align: right;
+    text-align: center;
 }
 
 .app__aboutus-content_knife {
@@ -41,11 +41,11 @@
 .app__aboutus-content_history {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-    text-align: left;
+    text-align: center;
 }
 
 .app__aboutus-content_about p,

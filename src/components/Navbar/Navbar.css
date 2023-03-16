@@ -38,7 +38,7 @@
   font-size: 1.7rem;
 }
 
-.app__navbar-links li:hover {
+.app__navbar-links li a:hover {
   color: var(--color-grey);
 }
 

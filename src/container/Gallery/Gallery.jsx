@@ -35,16 +35,21 @@ const Gallery = () => {
           mattis ipsum turpis elit elit scelerisque egestas mu.
         </p>
         <button type="button" className="custom__button">
-          View More
+          <a href="https://www.instagram.com/dolphinbayboston/" target="_blank">
+            View more
+          </a>
         </button>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
           {[
-            images.gallery01,
-            images.gallery02,
-            images.gallery03,
-            images.gallery04,
+            images.db2,
+            images.db1,
+            images.db6,
+            images.db4,
+            images.db7,
+            images.db8,
+            images.db3,
           ].map((image, index) => (
             <div
               className="app__gallery-images_card flex__center"

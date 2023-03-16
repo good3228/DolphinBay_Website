@@ -6,7 +6,6 @@ import images from "../../constants/images";
 import "./Navbar.css";
 
 const Navbar = () => {
-
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -17,16 +16,24 @@ const Navbar = () => {
 
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">Home</a>
+          <p class="p__cormorant">
+            <a href="#home">Home</a>
+          </p>
         </li>
         <li className="p__opensans">
-          <a href="#about">About</a>
+          <p className="p__cormorant">
+            <a href="#about">About</a>
+          </p>
         </li>
         <li className="p__opensans">
-          <a href="#special">Today's Special</a>
+          <p className="p__cormorant">
+            <a href="#special">Today's Special</a>
+          </p>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Contact</a>
+          <p className="p__cormorant">
+            <a href="#contact">Contact</a>
+          </p>
         </li>
       </ul>
       <div className="app__navbar-smallscreen">
