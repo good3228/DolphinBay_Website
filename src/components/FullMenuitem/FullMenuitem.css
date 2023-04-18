@@ -1,0 +1,12 @@
+.item-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item{
+    color: black;
+}
+
+.item-info h4 {
+    color: black;
+}
