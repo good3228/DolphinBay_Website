@@ -37,14 +37,7 @@ const App = () => (
             </>
           }
         ></Route>
-        <Route
-          path="/menu"
-          element={
-            <>
-              <Navbar /> <FullMenu />
-            </>
-          }
-        ></Route>
+        <Route path="/menu" element={<FullMenu />}></Route>
       </Routes>
     </BrowserRouter>
   </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./FullMenu.css";
 import { data } from "../../constants";
+import images from "../../constants/images";
 
 import { animate, motion } from "framer-motion";
 import { useMediaQuery } from "@mui/material";
@@ -184,6 +185,18 @@ const CustomizedMenus = () => {
   );
 };
 
+const Navbar = () => {
+  return (
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
+        <a href="http://localhost:3000/">
+          <img src={images.DB_logo} alt="app logo"></img>
+        </a>
+      </div>
+    </nav>
+  );
+};
+
 const FullMenu = () => {
   const [menuFilter, setMenuFilter] = useState("All");
   const [activeFilter, setActiveFilter] = useState("Appetizers");
@@ -195,16 +208,17 @@ const FullMenu = () => {
 
   return (
     <div className="app__fullMenu">
+      <Navbar></Navbar>
       {
         <div className="app__work-filter">
           {[
             "Appetizers",
-            "Noodle soup",
+            "Noodle Soup",
             "Stir Fry",
             "Rice Dishes",
             "Fried Rice",
             "Dry Noodles",
-            "Vegeterian Options",
+            "Vegetarian Options",
             "Soup",
           ].map((item, index) => (
             <>
@@ -236,23 +250,73 @@ const FullMenu = () => {
       ></motion.div> */}
       <div className="fullMenu-part">
         {/* {!isNonMobileScreens && <CustomizedMenus />} */}
-        {data.menu.map((item, index) => (
-          <>
-            <div className="item-info" key={index}>
-              <header>
-                <div className="item-info-title-price">
-                  <h4 className="title">{item.title}</h4>
-                  <h4 className="price">${item.price}</h4>
-                </div>
+        {/* {data.menu.map((item, index) => {
+          const isLast = index === data.menu.length - 1;
+          const isOddPosition = index % 2 === 0;
 
-                <div className="item-info-divide-text">
-                  <div className="divide-line"></div>
-                  <p className="item-text">{item.desc}</p>
+          return (
+            <>
+              {activeFilter === item.category && (
+                <div className="item-info" key={index}>
+                  <header>
+                    <div className="item-info-title-price">
+                      <h4 className="title">{item.title}</h4>
+                      <h4 className="price">${item.price}</h4>
+                    </div>
+
+                    <div className="item-info-divide-text">
+                      <div className="divide-line"></div>
+                      <p className="item-text">{item.desc}</p>
+                    </div>
+                  </header>
                 </div>
-              </header>
-            </div>
-          </>
-        ))}
+              )}
+            </>
+          );
+        })} */}
+
+        <div className="fullMenu-part">
+          {/* {!isNonMobileScreens && <CustomizedMenus />} */}
+          {data.menu
+            .filter((item) => item.category === activeFilter)
+            .map((item, index, array) => {
+              const isLast = array.indexOf(item) === array.length - 1;
+              const isOddPosition = index % 2 === 0;
+
+              return (
+                <>
+                  <div className="item-info" key={index}>
+                    <header>
+                      <div className="item-info-title-price">
+                        <h4 className="title">{item.title}</h4>
+                        <h4 className="price">${item.price}</h4>
+                      </div>
+
+                      <div className="item-info-divide-text">
+                        <div className="divide-line"></div>
+                        <p className="item-text">{item.desc}</p>
+                      </div>
+                    </header>
+                  </div>
+                  {isLast && isOddPosition && (
+                    <div className="item-info" key={index}>
+                      <header>
+                        <div className="item-info-title-price">
+                          <h4 className="title"></h4>
+                          <h4 className="price"></h4>
+                        </div>
+
+                        <div className="item-info-divide-text">
+                          {/* <div className="divide-line"></div> */}
+                          <p className="item-text"></p>
+                        </div>
+                      </header>
+                    </div>
+                  )}
+                </>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
