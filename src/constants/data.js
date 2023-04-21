@@ -565,11 +565,196 @@ const menu = [
   },
   {
     id: 69,
-    title: "Vegetarian Stir-fried Noodles 台式炒米粉",
+    title: "Vegetarian Stir-fried Rice Noodles 台式炒米粉",
     category: "Vegetarian Options",
     price: 13.5,
     desc: "Rice noodles with bean curd. carrot, onion. and assorted greens.",
   },
 ];
 
-export default { specials, favorites, awards, menu };
+const drinks = [
+  {
+    id: 1,
+    type: "Oolong",
+    showType: "Oolong 埔里高山烏龍茶",
+    price: 8,
+    desc: "Prized Oolong tea imported from our hometown -- Pull, Taiwan 24 OZ",
+    items: [
+      {
+        engTitle: "Cream Top Oolong",
+        chiTitle: "奶蓋烏龍茶",
+      },
+      {
+        engTitle: "Oolong(Unsweetened)",
+        chiTitle: "原味烏龍茶",
+      },
+      {
+        engTitle: "Oolong milk tea",
+        chiTitle: "烏龍奶茶",
+      },
+      {
+        engTitle: "Oolong(Sweetened)",
+        chiTitle: "泡沫烏龍茶",
+      },
+    ],
+  },
+  {
+    id: 2,
+    type: "Juice",
+    showType: "Juice 果汁",
+    price: 5.5,
+    desc: "Freshly blended fruit juices",
+    items: [
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+      {
+        engTitle: "Honey lemon",
+        chiTitle: "蜂蜜檸檬",
+      },
+      {
+        engTitle: "Lemon",
+        chiTitle: "檸檬",
+      },
+      {
+        engTitle: "Lychee",
+        chiTitle: "荔枝",
+      },
+      {
+        engTitle: "Honey grapefruit",
+        chiTitle: "蜂蜜葡萄柚",
+      },
+      {
+        engTitle: "Grapefruit",
+        chiTitle: "葡萄柚",
+      },
+    ],
+  },
+  {
+    id: 3,
+    type: "Milk",
+    showType: "Milk 牛奶",
+    price: 5.5,
+    desc: "Made fresh with lactose-free milk. Can be made iced or hot. * means iced only.",
+    items: [
+      {
+        engTitle: "Brown sugar",
+        chiTitle: "黑糖",
+      },
+      {
+        engTitle: "Taro",
+        chiTitle: "芋頭",
+      },
+      {
+        engTitle: "Red bean",
+        chiTitle: "紅豆",
+      },
+      {
+        engTitle: "Green bean",
+        chiTitle: "綠豆",
+      },
+      {
+        engTitle: "Strawberry banana*",
+        chiTitle: "草莓香蕉",
+      },
+      {
+        engTitle: "Strawberry*",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Mango*",
+        chiTitle: "芒果",
+      },
+      {
+        engTitle: "Coffee*",
+        chiTitle: "咖啡",
+      },
+      {
+        engTitle: "Coconut*",
+        chiTitle: "椰香",
+      },
+      {
+        engTitle: "Banana*",
+        chiTitle: "香蕉",
+      },
+    ],
+  },
+  {
+    id: 4,
+    type: "Mini Tapioca",
+    showType: "Mini Tapioca 西米露",
+    price: 6,
+    desc: "Made fresh with lactose-free milk. Can be made iced or hot.",
+    items: [
+      {
+        engTitle: "Taro coconut",
+        chiTitle: "芋頭椰汁",
+      },
+      {
+        engTitle: "Coconut",
+        chiTitle: "椰汁",
+      },
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+    ],
+  },
+  {
+    id: 5,
+    type: "Sea salt cream top tea",
+    showType: "Sea salt cream top tea 海鹽奶蓋茶",
+    price: 5,
+    desc: "Sweetened iced tea topped with homemade sea salt cream.",
+    items: [
+      {
+        engTitle: "Jasmine green tea",
+        chiTitle: "綠茶",
+      },
+      {
+        engTitle: "Black tea",
+        chiTitle: "紅茶",
+      },
+      {
+        engTitle: "Wintermelon tea",
+        chiTitle: "冬瓜茶",
+      },
+    ],
+  },
+  {
+    id: 5,
+    type: "Sea salt cream top tea",
+    showType: "Sea salt cream top tea 海鹽奶蓋茶",
+    price: 5,
+    desc: "Sweetened iced tea topped with homemade sea salt cream.",
+    items: [
+      {
+        engTitle: "Jasmine green tea",
+        chiTitle: "綠茶",
+      },
+      {
+        engTitle: "Black tea",
+        chiTitle: "紅茶",
+      },
+      {
+        engTitle: "Wintermelon tea",
+        chiTitle: "冬瓜茶",
+      },
+    ],
+  },
+];
+
+export default { specials, favorites, awards, menu, drinks };

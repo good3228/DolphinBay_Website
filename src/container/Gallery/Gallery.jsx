@@ -43,6 +43,12 @@ const Gallery = () => {
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
           {[
+            images.db10,
+            images.db11,
+            images.db12,
+            images.db13,
+            images.db14,
+            images.db15,
             images.db2,
             images.db1,
             images.db6,

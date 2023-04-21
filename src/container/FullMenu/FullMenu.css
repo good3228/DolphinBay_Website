@@ -57,6 +57,7 @@
   border-bottom: solid var(--color-blue) 2.5px;
   border-radius: 5px;
   cursor: pointer;
+
 }
 
 .app__fullMenu-filter-active {
@@ -102,7 +103,6 @@
   padding: 1.3rem;
   min-width: 300px;
 }
-
 
 .app__fullMenu .item-info .divide-line {
   width: 100%;

@@ -1,0 +1,43 @@
+import React, { useState, useEffect } from "react";
+
+import "./FullMenu.css";
+import { data } from "../../constants";
+import images from "../../constants/images";
+
+import "./DrinkMenu.css";
+
+const DrinkMenu = () => {
+  return (
+    <>
+      <div className="drinkMenu">
+        {data.drinks.map((drink) => {
+          return (
+            <>
+              <div className="drink-type-category">
+                <div className="drink-type-name" key={drink.id}>
+                  {drink.showType}
+                </div>
+                <div className="divide-line"></div>
+                <div className="drink-type-desc">{drink.desc}</div>
+                <div className="drink-info">
+                  {drink.items.map((item) => {
+                    return (
+                      <>
+                        <div className="drink-name">
+                          <div>{item.engTitle}</div>
+                          <div>{item.chiTitle}</div>
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default DrinkMenu;
