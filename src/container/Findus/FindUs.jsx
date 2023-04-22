@@ -21,7 +21,7 @@ const FindUs = () => (
         <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
         <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
       </div>
-      <a href="https://goo.gl/maps/AX2fx1k9f2RoZvM9A">
+      <a href="https://goo.gl/maps/AX2fx1k9f2RoZvM9A" target="_blank">
         <button
           type="button"
           className="custom__button"

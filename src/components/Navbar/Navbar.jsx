@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 import images from "../../constants/images";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -18,9 +19,12 @@ const Navbar = () => {
 
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <p class="p__cormorant">
-            <a href="#home">Home</a>
-          </p>
+          <p
+            className="p__cormorant"
+            onClick={() => {
+              navigate("menu");
+            }}
+          >Menu</p>
         </li>
         <li className="p__opensans">
           <p className="p__cormorant">
@@ -32,6 +36,12 @@ const Navbar = () => {
             <a href="#special">Today's Special</a>
           </p>
         </li>
+        <li className="p__opensans">
+          <p className="p__cormorant">
+            <a href="#gallery">Gallery</a>
+          </p>
+        </li>
+
         <li className="p__opensans">
           <p className="p__cormorant">
             <a href="#contact">Contact</a>
@@ -67,10 +77,15 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="p__opensans">
-                <a href="#Menu" onClick={() => setToggleMenu(false)}>
-                  Menu
+                <p onClick={() => navigate("menu")}>Menu</p>
+              </li>
+
+              <li className="p__opensans">
+                <a href="#gallery" onClick={() => setToggleMenu(false)}>
+                  Gallery
                 </a>
               </li>
+
               <li className="p__opensans">
                 <a href="#contact" onClick={() => setToggleMenu(false)}>
                   Contact

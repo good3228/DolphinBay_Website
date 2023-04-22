@@ -41,6 +41,10 @@
   color: var(--color-grey);
 }
 
+.app__navbar-links li p:hover {
+  color: var(--color-grey);
+}
+
 .app__navbar-smallscreen {
   display: none;
 }

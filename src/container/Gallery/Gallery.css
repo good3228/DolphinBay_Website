@@ -20,6 +20,10 @@
     margin-top: 1rem;
 }
 
+.app__gallery-content button:hover {
+    background-color: #f8e9b5;
+}
+
 .app__gallery-images {
     flex: 1;
     display: flex;
