@@ -574,37 +574,54 @@ const menu = [
 
 const drinks = [
   {
-    id: 1,
-    type: "Oolong",
-    showType: "Oolong 埔里高山烏龍茶",
+    id: 10,
+    type: "House specials",
+    showType: "House specials 海豚灣特調",
     price: 8,
-    desc: "Prized Oolong tea imported from our hometown -- Pull, Taiwan 24 OZ",
+    desc: "",
     items: [
       {
-        engTitle: "Cream Top Oolong",
-        chiTitle: "奶蓋烏龍茶",
+        engTitle: "Dolphin bay snow",
+        chiTitle: "豚豚奶",
+        price: 6,
       },
       {
-        engTitle: "Oolong(Unsweetened)",
-        chiTitle: "原味烏龍茶",
+        engTitle: "Pineapple slush",
+        chiTitle: "鳳梨冰沙",
+        price: 5.5,
       },
       {
-        engTitle: "Oolong milk tea",
-        chiTitle: "烏龍奶茶",
+        engTitle: "Mix fruit tea",
+        chiTitle: "綜合水果茶",
+        price: 6,
       },
       {
-        engTitle: "Oolong(Sweetened)",
-        chiTitle: "泡沫烏龍茶",
+        engTitle: "Float black tea",
+        chiTitle: "冰淇淋紅茶",
+        price: 5.5,
+      },
+      {
+        engTitle: "Cookies & Cream",
+        chiTitle: "黑炫風",
+        price: 5.5,
       },
     ],
   },
   {
-    id: 2,
-    type: "Juice",
-    showType: "Juice 果汁",
-    price: 5.5,
-    desc: "Freshly blended fruit juices",
+    id: 4,
+    type: "Mini Tapioca",
+    showType: "Mini Tapioca 西米露",
+    price: 6,
+    desc: "Made fresh with lactose-free milk. Can be made iced or hot.",
     items: [
+      {
+        engTitle: "Taro coconut",
+        chiTitle: "芋頭椰汁",
+      },
+      {
+        engTitle: "Coconut",
+        chiTitle: "椰汁",
+      },
       {
         engTitle: "Strawberry",
         chiTitle: "草莓",
@@ -613,9 +630,88 @@ const drinks = [
         engTitle: "Mango",
         chiTitle: "芒果",
       },
+    ],
+  },
+  {
+    id: 8,
+    type: "Milk tea",
+    showType: "Milk tea 奶茶",
+    price: 5,
+    desc: "Can be made iced or hot. Substitute with fresh milk for $1.",
+    items: [
       {
-        engTitle: "Peach",
-        chiTitle: "水蜜桃",
+        engTitle: "Dolphin Bay",
+        chiTitle: "海豚灣",
+      },
+      {
+        engTitle: "Taro",
+        chiTitle: "芋頭",
+      },
+      {
+        engTitle: "Coffee",
+        chiTitle: "咖啡",
+      },
+      {
+        engTitle: "Brown sugar",
+        chiTitle: "黑糖",
+      },
+      {
+        engTitle: "Matcha",
+        chiTitle: "抹茶",
+      },
+      {
+        engTitle: "Thai",
+        chiTitle: "泰式",
+      },
+      {
+        engTitle: "Jasmine green",
+        chiTitle: "奶綠",
+      },
+      {
+        engTitle: "Honey",
+        chiTitle: "蜂蜜",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+
+      {
+        engTitle: "Honey green",
+        chiTitle: "蜂蜜奶綠",
+      },
+      {
+        engTitle: "Lavander",
+        chiTitle: "薰衣草",
+      },
+      {
+        engTitle: "Ginger",
+        chiTitle: "薑母",
+      },
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+    ],
+  },
+  {
+    id: 9,
+    type: "Tea",
+    showType: "Tea 茶",
+    price: 4.75,
+    desc: "Pair with either green tea or black tea. Can be made iced or hot.",
+    items: [
+      {
+        engTitle: "Passion fruit",
+        chiTitle: "百香果",
+      },
+      {
+        engTitle: "Plum",
+        chiTitle: "梅子",
+      },
+      {
+        engTitle: "Yogurt",
+        chiTitle: "養樂多",
       },
       {
         engTitle: "Honey lemon",
@@ -626,8 +722,8 @@ const drinks = [
         chiTitle: "檸檬",
       },
       {
-        engTitle: "Lychee",
-        chiTitle: "荔枝",
+        engTitle: "Honey",
+        chiTitle: "蜂蜜",
       },
       {
         engTitle: "Honey grapefruit",
@@ -636,6 +732,125 @@ const drinks = [
       {
         engTitle: "Grapefruit",
         chiTitle: "葡萄柚",
+      },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Lychee",
+        chiTitle: "荔枝",
+      },
+      {
+        engTitle: "Ginger",
+        chiTitle: "薑母",
+      },
+      {
+        engTitle: "Wintermelon",
+        chiTitle: "冬瓜",
+      },
+      {
+        engTitle: "Iced tea",
+        chiTitle: "泡沫",
+      },
+    ],
+  },
+  {
+    id: 7,
+    type: "Snow",
+    showType: "Snow 雪泡",
+    price: 5,
+    desc: "Creamy slushee drinks",
+    items: [
+      {
+        engTitle: "Red bean",
+        chiTitle: "紅豆沙",
+      },
+      {
+        engTitle: "Green bean",
+        chiTitle: "綠豆沙",
+      },
+      {
+        engTitle: "Taro",
+        chiTitle: "芋頭",
+      },
+      {
+        engTitle: "Lychee",
+        chiTitle: "荔枝",
+      },
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+      {
+        engTitle: "Plum",
+        chiTitle: "梅子",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+      {
+        engTitle: "Passion fruit",
+        chiTitle: "百香果",
+      },
+      {
+        engTitle: "Matcha",
+        chiTitle: "抹茶",
+      },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+    ],
+  },
+  {
+    id: 6,
+    type: "Slush",
+    showType: "Slush 冰沙",
+    price: 5,
+    desc: "Blended slushee drinks.",
+    items: [
+      {
+        engTitle: "Passion fruit",
+        chiTitle: "百香果",
+      },
+      {
+        engTitle: "Lychee",
+        chiTitle: "荔枝",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+      {
+        engTitle: "Lemon",
+        chiTitle: "檸檬",
+      },
+      {
+        engTitle: "Plum",
+        chiTitle: "梅子",
+      },
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+      {
+        engTitle: "Yogurt",
+        chiTitle: "養樂多",
       },
     ],
   },
@@ -689,20 +904,12 @@ const drinks = [
     ],
   },
   {
-    id: 4,
-    type: "Mini Tapioca",
-    showType: "Mini Tapioca 西米露",
-    price: 6,
-    desc: "Made fresh with lactose-free milk. Can be made iced or hot.",
+    id: 2,
+    type: "Juice",
+    showType: "Juice 果汁",
+    price: 5.5,
+    desc: "Freshly blended fruit juices",
     items: [
-      {
-        engTitle: "Taro coconut",
-        chiTitle: "芋頭椰汁",
-      },
-      {
-        engTitle: "Coconut",
-        chiTitle: "椰汁",
-      },
       {
         engTitle: "Strawberry",
         chiTitle: "草莓",
@@ -711,26 +918,54 @@ const drinks = [
         engTitle: "Mango",
         chiTitle: "芒果",
       },
+      {
+        engTitle: "Peach",
+        chiTitle: "水蜜桃",
+      },
+      {
+        engTitle: "Honey lemon",
+        chiTitle: "蜂蜜檸檬",
+      },
+      {
+        engTitle: "Lemon",
+        chiTitle: "檸檬",
+      },
+      {
+        engTitle: "Lychee",
+        chiTitle: "荔枝",
+      },
+      {
+        engTitle: "Honey grapefruit",
+        chiTitle: "蜂蜜葡萄柚",
+      },
+      {
+        engTitle: "Grapefruit",
+        chiTitle: "葡萄柚",
+      },
     ],
   },
   {
-    id: 5,
-    type: "Sea salt cream top tea",
-    showType: "Sea salt cream top tea 海鹽奶蓋茶",
-    price: 5,
-    desc: "Sweetened iced tea topped with homemade sea salt cream.",
+    id: 1,
+    type: "Oolong",
+    showType: "Oolong 埔里高山烏龍茶",
+    price: 8,
+    desc: "Prized Oolong tea imported from our hometown -- Pull, Taiwan 24 OZ",
     items: [
       {
-        engTitle: "Jasmine green tea",
-        chiTitle: "綠茶",
+        engTitle: "Cream Top Oolong",
+        chiTitle: "奶蓋烏龍茶",
       },
       {
-        engTitle: "Black tea",
-        chiTitle: "紅茶",
+        engTitle: "Oolong(Unsweetened)",
+        chiTitle: "原味烏龍茶",
       },
       {
-        engTitle: "Wintermelon tea",
-        chiTitle: "冬瓜茶",
+        engTitle: "Oolong milk tea",
+        chiTitle: "烏龍奶茶",
+      },
+      {
+        engTitle: "Oolong(Sweetened)",
+        chiTitle: "泡沫烏龍茶",
       },
     ],
   },
