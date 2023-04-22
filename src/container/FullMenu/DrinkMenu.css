@@ -16,14 +16,18 @@
   margin: 2rem;
 }
 
-
 .drink-type-name {
   font-size: 1.3rem;
-  color: #fffffff6;
+  color: #ffffffdd;
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .app__fullMenu .drink-type-category .divide-line {
-  width: 100%;
+  width: 90%;
   height: 1px;
   border: solid rgba(255, 255, 255, 0.334) 0.4px;
   margin: 1rem 0;
@@ -39,16 +43,33 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-    color: #ffffffbc;
+  color: #ffffffbc;
 }
 
 .drink-name {
   width: 20vw;
   min-width: 150px;
   /* text-align: center; */
-  margin-top: 2rem;
+  margin-top: 1.7rem;
+  font-weight: 600;
 }
 
 .drink-name div {
   margin-top: 0.5rem;
+}
+
+.shaved-ice-div {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  min-width: 300px;
+  padding-bottom: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.shaved-ice {
+  width: 30vw;
+  min-width: 300px;
+  height: auto;
 }

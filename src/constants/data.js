@@ -502,28 +502,28 @@ const menu = [
   },
   {
     id: 60,
-    title: "WONTON",
+    title: "Wonton",
     category: "Soup",
     price: 10,
     desc: "餛飩湯",
   },
   {
     id: 61,
-    title: "BRAISED BEEF SOUP",
+    title: "Braised beef soup",
     category: "Soup",
     price: 11,
     desc: "牛肉湯",
   },
   {
     id: 62,
-    title: "SQUID BALL",
+    title: "Squid ball",
     category: "Soup",
     price: 8,
     desc: "花枝丸湯",
   },
   {
     id: 63,
-    title: "EGG FLOWER",
+    title: "Egg flower",
     category: "Soup",
     price: 7,
     desc: "蛋花湯",
@@ -577,7 +577,7 @@ const drinks = [
     id: 10,
     type: "House specials",
     showType: "House specials 海豚灣特調",
-    price: 8,
+    price: 6,
     desc: "",
     items: [
       {
@@ -987,6 +987,63 @@ const drinks = [
       {
         engTitle: "Wintermelon tea",
         chiTitle: "冬瓜茶",
+      },
+    ],
+  },
+  {
+    id: 11,
+    type: "Shaved ice",
+    showType: "Shaved ice 刨冰",
+    price: 5,
+    desc: "Choose up to 4 toppings. Additional toppings for $0.5 each.",
+    items: [
+      {
+        engTitle: "Egg pudding",
+        chiTitle: "綠茶",
+      },
+      {
+        engTitle: "Grass jelly",
+        chiTitle: "仙草",
+      },
+      {
+        engTitle: "Strawberry",
+        chiTitle: "草莓",
+      },
+      {
+        engTitle: "Red Bean",
+        chiTitle: "紅豆",
+      },
+      {
+        engTitle: "Aloe",
+        chiTitle: "蘆薈",
+      },
+      {
+        engTitle: "Mango",
+        chiTitle: "芒果",
+      },
+      {
+        engTitle: "Green bean",
+        chiTitle: "綠豆",
+      },
+      {
+        engTitle: "Fresh taro",
+        chiTitle: "新鮮芋頭",
+      },
+      {
+        engTitle: "Tapioca",
+        chiTitle: "波霸",
+      },
+      {
+        engTitle: "Coconut jelly",
+        chiTitle: "椰果",
+      },
+      {
+        engTitle: "Condensed milk",
+        chiTitle: "煉乳",
+      },
+      {
+        engTitle: "Mini tapioca",
+        chiTitle: "西米露",
       },
     ],
   },

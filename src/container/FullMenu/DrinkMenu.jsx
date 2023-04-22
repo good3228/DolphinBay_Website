@@ -16,6 +16,7 @@ const DrinkMenu = () => {
               <div className="drink-type-category">
                 <div className="drink-type-name" key={drink.id}>
                   {drink.showType}
+                  <div>${drink.price}</div>
                 </div>
                 <div className="divide-line"></div>
                 <div className="drink-type-desc">{drink.desc}</div>
@@ -35,6 +36,9 @@ const DrinkMenu = () => {
             </>
           );
         })}
+        <div className="shaved-ice-div">
+          <img src={images.shavedIce} className="shaved-ice"></img>
+        </div>
       </div>
     </>
   );

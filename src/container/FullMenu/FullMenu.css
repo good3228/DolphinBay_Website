@@ -12,7 +12,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   margin: 3rem;
 }
 
@@ -57,7 +56,6 @@
   border-bottom: solid var(--color-blue) 2.5px;
   border-radius: 5px;
   cursor: pointer;
-
 }
 
 .app__fullMenu-filter-active {

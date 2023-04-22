@@ -35,12 +35,14 @@ import db12 from "../assets/db12.png";
 import db13 from "../assets/db13.png";
 import db14 from "../assets/db14.png";
 import db15 from "../assets/db15.png";
+import shavedIce from "../assets/shaved_ice.png";
 
 import video1 from "../assets/video1.MOV";
 import video2 from "../assets/video2.MOV";
 import video3 from "../assets/DB_show.mp4";
 
 export default {
+  shavedIce,
   Aunt,
   DB_logo,
   bg,
