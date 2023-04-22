@@ -994,7 +994,7 @@ const drinks = [
     id: 11,
     type: "Shaved ice",
     showType: "Shaved ice 刨冰",
-    price: 5,
+    price: 12,
     desc: "Choose up to 4 toppings. Additional toppings for $0.5 each.",
     items: [
       {
