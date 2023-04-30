@@ -16,29 +16,28 @@ const Gallery = () => {
     const { current } = scrollRef;
 
     if (direction === "left") {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 330;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 330;
     }
   };
 
   return (
     <div id="gallery" className="app__gallery flex__center">
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
+        <SubHeading title="Beyond the Plate" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p
           className="p__opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          A Restaurant Where You're Treated Like Family.
         </p>
-        <button type="button" className="custom__button">
+        {/* <button type="button" className="custom__button">
           <a href="https://www.instagram.com/dolphinbayboston/" target="_blank">
             View more
           </a>
-        </button>
+        </button> */}
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>

@@ -24,7 +24,9 @@ const Navbar = () => {
             onClick={() => {
               navigate("menu");
             }}
-          >Menu</p>
+          >
+            Menu
+          </p>
         </li>
         <li className="p__opensans">
           <p className="p__cormorant">
@@ -57,7 +59,7 @@ const Navbar = () => {
           }}
         />
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide_bottom">
+          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
@@ -67,17 +69,18 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans">
-                <a href="#home" onClick={() => setToggleMenu(false)}>
-                  Home
-                </a>
+                <p onClick={() => navigate("menu")}>Menu</p>
               </li>
+
               <li className="p__opensans">
                 <a href="#about" onClick={() => setToggleMenu(false)}>
                   About
                 </a>
               </li>
               <li className="p__opensans">
-                <p onClick={() => navigate("menu")}>Menu</p>
+                <a href="#special" onClick={() => setToggleMenu(false)}>
+                  Today's Special
+                </a>
               </li>
 
               <li className="p__opensans">

@@ -76,14 +76,16 @@
 }
 @media screen and (max-width: 1150px) {
   .app__fullMenu-filter {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-right: 0.8rem;
-    margin-left: 0.8rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
   }
   .app__fullMenu-filter-active {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
   }
 }
 .fullMenu-part {

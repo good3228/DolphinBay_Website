@@ -26,8 +26,10 @@ const Footer = () => (
           style={{ marginTop: 15 }}
         />
         <div className="app__footer-links_icons">
-          <FiFacebook />
-          <FiTwitter />
+          <a href="https://www.facebook.com/dolphinbayboston" target="_blank">
+            <FiFacebook />
+          </a>
+
           <a href="https://www.instagram.com/dolphinbayboston/" target="_blank">
             <FiInstagram />
           </a>

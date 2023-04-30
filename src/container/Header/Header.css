@@ -1,20 +1,32 @@
-.app__header{
-    background-color: var(--color-blue);
+.app__header {
+  background-color: var(--color-blue);
 }
 
-.app__header-h1{
-    font-family: var(--font-base);
-    color: var(--color-golden);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    line-height: 117px;
-    font-size: 90px;
+.app__header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 90px;
 }
 
-.app__wrapper_info button:hover{
-    background-color: #f8e9b5;
+.app__wrapper_info button:hover {
+  background-color: #f8e9b5;
 }
 
-.app__header-img img{
-    width: 280px;
+.app__header-img img {
+  width: 280px;
+}
+
+@media screen and (max-width: 900px) {
+  .app__header-h1 {
+    font-size: 45px;
+    line-height: normal;
+  }
+
+  .app__header .app__wrapper_img img{
+    width: 80%;
+    
+  }
 }

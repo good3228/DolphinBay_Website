@@ -180,3 +180,7 @@
   }
 }
 
+
+.app__specialMenu button:hover {
+  background-color: #f8e9b5;
+}

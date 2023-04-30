@@ -214,7 +214,13 @@ const FullMenu = () => {
                   <div className="item-info" key={index}>
                     <header>
                       <div className="item-info-title-price">
-                        <h4 className="title">{item.title}</h4>
+                        <div>
+                          <h4 className="title">
+                            {item.engTitle.length === 0 ?  item.title : item.engTitle}
+                          </h4>
+                          <h4 className="title">{item.chiTitle}</h4>
+                        </div>
+
                         <h4 className="price">${item.price}</h4>
                       </div>
 
