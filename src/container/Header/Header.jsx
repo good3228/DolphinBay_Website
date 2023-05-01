@@ -13,7 +13,10 @@ const Header = () => {
       <div className="app__wrapper_info">
         <SubHeading title={"Chase the taste of Taiwan"} />
         <h1 className="app__header-h1"> The Key to Fine Dining</h1>
-        <p className="p__opensans" style={{ margin: "2rem 0", color: "white" }}>
+        <p
+          className="app__header-info"
+          style={{ margin: "2rem 0", color: "white" }}
+        >
           Delicious Taiwanese cuisine with authentic flavors and friendly
           service awaits.
         </p>

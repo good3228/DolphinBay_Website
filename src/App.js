@@ -25,7 +25,9 @@ const App = () => (
           path="/"
           element={
             <>
-              <Navbar />
+              <div style={{ position: "sticky", top: 0, zIndex : 100}}>
+                <Navbar />
+              </div>
               <Header />
               <AboutUs />
               <SpecialMenu />

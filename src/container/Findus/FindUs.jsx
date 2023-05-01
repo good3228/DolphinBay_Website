@@ -13,6 +13,7 @@ const FindUs = () => (
       </h1>
       <div className="app__wrapper-content">
         <p className="p__opensans">72 Brighton Ave, Boston, MA 02134</p>
+        <p className="p__opensans">+1 562-650-6886</p>
         <p
           className="p__cormorant"
           style={{ color: "#DCCA87", margin: "2rem 0" }}

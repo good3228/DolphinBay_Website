@@ -16,7 +16,7 @@ const Footer = () => (
 
       <div className="app__footer-links_logo">
         <img src={images.DB_logo} alt="footer_logo" />
-        <p className="p__opensans">
+        <p className="app__footer-quote">
           &quot;The best way to find yourself is to lose yourself in the service
           of others.&quot;
         </p>

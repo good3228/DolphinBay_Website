@@ -28,7 +28,7 @@ const Gallery = () => {
         <SubHeading title="Beyond the Plate" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p
-          className="p__opensans"
+          className="app__gallery-info"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
           A Restaurant Where You're Treated Like Family.

@@ -19,14 +19,24 @@
   width: 280px;
 }
 
+.app__header-info {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 900px) {
   .app__header-h1 {
     font-size: 45px;
     line-height: normal;
   }
 
-  .app__header .app__wrapper_img img{
+  .app__header .app__wrapper_img img {
     width: 80%;
-    
   }
 }
