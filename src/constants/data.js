@@ -747,7 +747,7 @@ const drinks = [
   {
     id: 4,
     type: "Mini Tapioca",
-    showType: "Mini Tapioca 西米露",
+    showType: "Mini tapioca 西米露",
     price: 6,
     desc: "Made fresh with lactose-free milk. Can be made iced or hot.",
     items: [
