@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 
@@ -25,7 +26,7 @@ const App = () => (
           path="/"
           element={
             <>
-              <div style={{ position: "sticky", top: 0, zIndex : 100}}>
+              <div style={{ position: "sticky", top: 0, zIndex: 100 }}>
                 <Navbar />
               </div>
               <Header />

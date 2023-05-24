@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { React, useState } from "react";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";

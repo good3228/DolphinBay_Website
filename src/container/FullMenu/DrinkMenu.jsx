@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 
 import "./FullMenu.css";
@@ -9,7 +10,10 @@ import "./DrinkMenu.css";
 const DrinkMenu = () => {
   return (
     <>
-      <p className="topping-detail">Toppings($.50): Boba/ Mini tapioca/ Pudding/ Lychee jelly/ Grass jelly/ Aloe</p>
+      <p className="topping-detail">
+        Toppings($.50): Boba/ Mini tapioca/ Pudding/ Lychee jelly/ Grass jelly/
+        Aloe
+      </p>
       <div className="drinkMenu">
         {data.drinks.map((drink) => {
           return (

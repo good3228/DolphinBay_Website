@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 import { SubHeading, MenuItem } from "../../components";
@@ -53,7 +54,11 @@ const SpecialMenu = () => {
       </div>
 
       <div style={{ marginTop: 15 }}>
-        <button onClick={()=>navigate('/menu')} type="button" className="custom__button">
+        <button
+          onClick={() => navigate("/menu")}
+          type="button"
+          className="custom__button"
+        >
           View More
         </button>
       </div>

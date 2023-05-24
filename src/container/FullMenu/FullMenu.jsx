@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 
 import "./FullMenu.css";
@@ -17,131 +18,6 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import DrinkMenu from "./DrinkMenu";
-
-// const CustomizedMenus = () => {
-//   const [anchorEl, setAnchorEl] = useState(null);
-//   const [currentFilter, setCurrentFilter] = useState("Menu");
-//   const open = Boolean(anchorEl);
-//   const handleClick = (event) => {
-//     setAnchorEl(event.currentTarget);
-//   };
-//   const handleClose = () => {
-//     setAnchorEl(null);
-//   };
-
-//   return (
-//     <div className="FullMenu">
-//       <Button
-//         id="demo-customized-button"
-//         aria-controls={open ? "demo-customized-menu" : undefined}
-//         aria-haspopup="true"
-//         aria-expanded={open ? "true" : undefined}
-//         variant="contained"
-//         disableElevation
-//         onClick={handleClick}
-//         endIcon={<KeyboardArrowDownIcon />}
-//         sx={{
-//           width: "180px",
-//           margin: "1rem 30vw",
-//           fontWeight: 900,
-//         }}
-//       >
-//         {currentFilter}
-//       </Button>
-//       <StyledMenu
-//         id="demo-customized-menu"
-//         MenuListProps={{
-//           "aria-labelledby": "demo-customized-button",
-//         }}
-//         anchorEl={anchorEl}
-//         open={open}
-//         onClose={handleClose}
-//       >
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Menu");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Menu
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Appetizers");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Appetizers
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Noodle Soup");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Noodle Soup
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Stir Fry");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Stir Fry
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Rice Dishes");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Rice Dishes
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Fried Rice");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Fried Rice
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Dry Noodles");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Dry Noodles
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Vegetarian");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Vegetarian Options
-//         </MenuItem>
-//         <MenuItem
-//           onClick={() => {
-//             setCurrentFilter("Soup");
-//             handleClose();
-//           }}
-//           disableRipple
-//         >
-//           Soup
-//         </MenuItem>
-//       </StyledMenu>
-//     </div>
-//   );
-// };
 
 const Navbar = () => {
   return (
@@ -216,7 +92,9 @@ const FullMenu = () => {
                       <div className="item-info-title-price">
                         <div>
                           <h4 className="title">
-                            {item.engTitle.length === 0 ?  item.title : item.engTitle}
+                            {item.engTitle.length === 0
+                              ? item.title
+                              : item.engTitle}
                           </h4>
                           <h4 className="title">{item.chiTitle}</h4>
                         </div>

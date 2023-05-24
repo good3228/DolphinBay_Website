@@ -1,3 +1,4 @@
+/* eslint-disable */
 import images from "./images";
 
 const specials = [

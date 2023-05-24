@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from "react";
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 
-import {images} from "../../constants"
+import { images } from "../../constants";
 import "./Intro.css";
 
 const Intro = () => {

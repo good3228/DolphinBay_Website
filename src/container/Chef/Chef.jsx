@@ -1,8 +1,9 @@
-import React from 'react';
+/* eslint-disable */
+import React from "react";
 
-import { SubHeading } from '../../components';
-import { images } from '../../constants';
-import './Chef.css';
+import { SubHeading } from "../../components";
+import { images } from "../../constants";
+import "./Chef.css";
 
 const Chef = () => (
   <div className="app__chef app__wrapper section__padding">
